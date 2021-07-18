@@ -227,7 +227,7 @@
 			$.ajax({      	
 
 		      type: "POST",
-		      url: "inc/sendEmail.php",
+		      url: "https://formspree.io/f/mdoylwbw",
 		      data: $(form).serialize(),
 		      beforeSend: function() { 
 
@@ -237,19 +237,11 @@
 		      success: function(msg) {
 
 	            // Message was sent
-	            if (msg == 'OK') {
+
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
 	               $('#message-success').fadeIn();   
-	            }
-	            // There was an error
-	            else {
-	            	sLoader.fadeOut(); 
-	               $('#message-warning').html(msg);
-		            $('#message-warning').fadeIn();
-	            }
-
 		      },
 		      error: function() {
 

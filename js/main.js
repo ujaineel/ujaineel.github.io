@@ -237,11 +237,11 @@
 		      success: function(msg) {
 
 	            // Message was sent
-
 	            	sLoader.fadeOut(); 
 	               $('#message-warning').hide();
 	               $('#contactForm').fadeOut();
 	               $('#message-success').fadeIn();   
+
 		      },
 		      error: function() {
 

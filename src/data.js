@@ -1,15 +1,15 @@
 export const personalData = {
   name: "Jaineel Upadhyay",
-  title: "Software Engineer",
-  headline: "The Digital Hearth.",
-  subheadline: "Human-Centric Technology.",
-  about: "Backend Engineer with 4 years of experience building, stabilizing, and maintaining high-volume systems. I specialize in modernizing legacy codebases, resolving critical production incidents, and ensuring technical excellence through clean, human-led architecture.",
+  title: "Experienced Software Engineer",
+  headline: "Integrating Resilience and Reliability in High-Volume Systems",
+  subheadline: "Backend Engineering",
+  about: "Backend Engineer with 4 years of experience building, stabilizing, and maintaining high-volume systems. I specialize in modernizing legacy codebases, resolving critical production incidents, and ensuring technical excellence through clean architecture.",
   experience: [
     {
       id: "upstart",
       company: "Upstart",
       role: "Software Engineer",
-      type: "High-Pace Fintech",
+      type: "High-Growth Fintech",
       highlights: [
         {
           title: "Production Reliability Engineering",
@@ -19,7 +19,7 @@ export const personalData = {
         {
           title: "API Modernization & Architecture",
           detail: "Led the migration of legacy data ingestion pipelines to certified RESTful APIs with strict Zod validation.",
-          subtext: "Reduced data corruption errors by 30% and ensured regulatory compliance for auto loan processing."
+          subtext: "Reduced data corruption errors by 30% and ensured regulatory compliance for auto leads and auto loan processing."
         },
         {
           title: "Performance & Monitoring",
@@ -27,13 +27,13 @@ export const personalData = {
           subtext: "Directly reduced API errors and latency for high-traffic partner endpoints."
         }
       ],
-      tags: ["AWS", "TypeScript", "Node.js", "PostgreSQL", "DataDog"]
+      tags: ["AWS", "TypeScript", "Node.js", "PostgreSQL", "Datadog", "LaunchDarkly", "GrowthBook", "SumoLogic"]
     },
     {
       id: "accenture",
       company: "Accenture",
       role: "Application Development Analyst",
-      type: "Corporate Innovation",
+      type: "Cloud Innovation Center",
       highlights: [
         {
           title: "Internal App Development",
@@ -41,13 +41,13 @@ export const personalData = {
           subtext: "Improved tool accessibility across the organization."
         },
         {
-          title: "Agile Excellence",
-          detail: "Operated within an Extreme Programming (XP) environment with Pair Programming and TDD.",
-          subtext: "Delivered high-quality code with 90%+ test coverage."
+          title: "Agile & Peer Collaboration",
+          detail: "Practiced Extreme Programming (XP) and Test-Driven Development (TDD) within a rapid-iteration lab environment.",
+          subtext: "Achieved 90%+ test coverage and facilitated technical knowledge-sharing sessions with other team members."
         },
         {
-          title: "AWS Certification",
-          detail: "Earned AWS Solutions Architect Associate and Cloud Practitioner credentials.",
+          title: "AWS Professional Certification",
+          detail: "Earned AWS Solutions Architect Associate and Cloud Practitioner certifications.",
           subtext: "Deepened technical expertise in designing scalable, fault-tolerant systems."
         }
       ],
@@ -56,32 +56,38 @@ export const personalData = {
   ],
   projects: [
     {
-      title: "Cloud-Native Ingestor",
-      category: "Infrastructure",
-      description: "A highly scalable data ingestion pipeline built with AWS SNS, Lambda, and Drizzle ORM.",
-      tags: ["AWS", "TypeScript", "Node.js"]
+      title: "Finance Ticker Summarizer (Chrome Extension)",
+      category: "Productivity / AI Integration",
+      description: "A browser-based tool designed to provide instant, context-aware financial summaries for stock tickers identified on any webpage.",
+      highlights: [
+        "Engineered a content script to dynamically scan and identify financial tickers across diverse web DOM structures.",
+        "Integrated a backend bridge to aggregate real-time market sentiment and fundamental data for identified assets using gen AI.",
+        "Optimized extension memory usage to ensure zero-latency impact on the user's primary browsing experience using caching."
+      ],
+      tags: ["Gen AI", "CloudFlare", "JavaScript", "Chrome API", "Yahoo Finance API", "Financial Data", "RegEx"]
     },
     {
-      title: "Paper Trading Engine v2",
-      category: "Backend",
-      description: "Robust backend for high-frequency trading simulations, focusing on low-latency and cost-efficiency.",
-      tags: ["Fastify", "PostgreSQL", "OOP"]
+      title: "IPC-Kernel-Calls (Operating Systems)",
+      category: "Systems Programming / University",
+      description: "A deep-dive exploration of low-level Inter-Process Communication (IPC) and custom kernel-level system calls.",
+      highlights: [
+        "Implemented custom kernel calls to facilitate direct communication between isolated user-space processes.",
+        "Managed memory allocation and synchronization primitives to prevent deadlocks in high-concurrency kernel environments.",
+        "Documented performance benchmarks comparing custom IPC methods against standard Unix pipes and sockets."
+      ],
+      tags: ["C", "Kernel Programming", "Operating Systems", "IPC"]
     },
     {
-      title: "Unified Auth Layer",
-      category: "Architecture",
-      description: "A secure, unified authentication system integrating Google OAuth and Passport Discord.",
-      tags: ["Passport.js", "OAuth2", "Next.js"]
+      title: "Distributed Processeing of a Round-Robin AI Simulation",
+      category: "Distributed & Parallel Processing / University",
+      description: "Distributed processing to identify efficient solutions to solve the game of Dominion.",
+      highlights: [],
+      tags: ["Java", "Monte Carlo Strategy", "Distributed Computing"]
     }
   ],
-  skills: [
-    { name: "TypeScript", level: 95 },
-    { name: "Node.js", level: 90 },
-    { name: "AWS Infrastructure", level: 85 }
-  ],
   contact: {
-    email: "hello@jaineel.dev",
+    email: "ujaineel@gmail.com",
     github: "https://github.com/ujaineel",
-    linkedin: "https://linkedin.com/in/ujaineel"
+    linkedin: "https://linkedin.com/in/jaineel-upadhyay"
   }
 };

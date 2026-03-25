@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/ujaineel.github.io/', // matches the repository name
+  base: '/', // root domain for ujaineel.github.io
   build: {
     outDir: 'dist',
   }

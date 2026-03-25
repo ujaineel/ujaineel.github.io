@@ -93,6 +93,6 @@ export const personalData = {
   contact: {
     email: "ujaineel@gmail.com",
     github: "https://github.com/ujaineel",
-    linkedin: "https://linkedin.com/in/jaineel-upadhyay"
+    linkedin: "https://www.linkedin.com/in/jaineelupadhyay/"
   }
 };

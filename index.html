@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Architectural Core | Personal Brand</title>
+  <style>
+    /* Inline some critical styles for better LCP or use standard external stylesheet */
+  </style>
+</head>
+<body>
+  <header class="glass">
+    <div class="logo">ARCHITECT.</div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#metrics">Health</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="section">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="label-sm">System Architect & Engineer</p>
+          <h1 class="display-lg">The Architectural Core.</h1>
+          <p class="body-lg" style="margin-bottom: var(--spacing-8); max-width: 600px;">
+            Building digital infrastructure where code meets precision. I treat cloud environments as physical layers, ensuring every node and connection is optimized for high-performance longevity.
+          </p>
+          <a href="#work" class="btn-primary bg-gradient">Explore Infrastructure</a>
+        </div>
+        <div class="hero-image">
+          <img src="/assets/hero.png" alt="Architectural Blueprint" style="width: 100%; border-radius: 1rem; box-shadow: 0 0 40px rgba(0, 220, 229, 0.1);">
+        </div>
+      </div>
+    </section>
+
+    <!-- Work/Projects Section -->
+    <section id="work" class="section layer-low">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--spacing-12);">
+          <div>
+            <p class="label-sm">Recent Deployments</p>
+            <h2>Engineered Solutions</h2>
+          </div>
+          <p class="body-sm" style="max-width: 300px; color: var(--on-surface-variant);">
+            Current projects focusing on TypeScript, AWS, and Distributed Systems.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <div class="card">
+            <p class="label-sm" style="color: var(--primary);">Infrastructure</p>
+            <h3>Cloud-Native Ingestor</h3>
+            <p style="margin: 1rem 0;">A highly scalable data ingestion pipeline built with AWS SNS, Lambda, and Drizzle ORM.</p>
+            <div class="tags">
+              <span class="chip">AWS</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Node.js</span>
+            </div>
+          </div>
+          
+          <div class="card">
+            <p class="label-sm" style="color: var(--primary);">Backend</p>
+            <h3>Paper Trading Engine v2</h3>
+            <p style="margin: 1rem 0;">Robust backend for high-frequency trading simulations, focusing on low-latency and cost-efficiency.</p>
+            <div class="tags">
+              <span class="chip">Fastify</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">OOP</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="label-sm" style="color: var(--primary);">Architecture</p>
+            <h3>Unified Auth Layer</h3>
+            <p style="margin: 1rem 0;">A secure, unified authentication system integrating Google OAuth and Passport Discord.</p>
+            <div class="tags">
+              <span class="chip">Passport.js</span>
+              <span class="chip">OAuth2</span>
+              <span class="chip">Next.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Metrics / Skills Section -->
+    <section id="metrics" class="section">
+      <div class="container metrics-container">
+        <div class="metric-card layer-highest">
+          <div class="metric-header">
+            <p class="label-sm">System Health</p>
+            <h3>Language Proficiency</h3>
+          </div>
+          <div class="metric-visual">
+            <div class="prof-bar">
+              <span class="label">TypeScript</span>
+              <div class="bar-bg"><div class="bar-fill" style="width: 95%;"></div></div>
+            </div>
+            <div class="prof-bar">
+              <span class="label">Node.js</span>
+              <div class="bar-bg"><div class="bar-fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="prof-bar">
+              <span class="label">AWS Infrastructure</span>
+              <div class="bar-bg"><div class="bar-fill" style="width: 85%;"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="metric-text">
+          <p class="label-sm">The Philosophy</p>
+          <h2>The "No-Line" Rule</h2>
+          <p style="margin-top: 2rem;">
+            Design is defined by content, not strokes. My systems are built on a foundation of tonal shifts and structural hierarchy, ensuring a clean, authoritative interface that speaks to the engineering behind it.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section layer-lowest" style="padding-bottom: var(--spacing-24);">
+      <div class="container" style="text-align: center;">
+        <p class="label-sm">Connection Established</p>
+        <h2 style="font-size: 3rem; margin-bottom: var(--spacing-8);">Let's Build the Core.</h2>
+        <a href="mailto:hello@example.com" class="btn-primary bg-gradient">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="display: flex; justify-content: space-between; padding: 2rem; border-top: 1px solid var(--outline-variant);">
+      <p>&copy; 2026 Jaineel Upadhyay. All Rights Reserved.</p>
+      <div class="footer-links">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

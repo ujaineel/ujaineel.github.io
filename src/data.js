@@ -25,6 +25,11 @@ export const personalData = {
           title: "Performance & Monitoring",
           detail: "Utilized Datadog and SumoLogic to trace slow queries and debug intermittent issues.",
           subtext: "Directly reduced API errors and latency for high-traffic partner endpoints."
+        },
+        {
+          title: "Third-Party Integrations SME",
+          detail: "Served as the Subject Matter Expert (SME) for Auto CRM integrations",
+          subtext: "Consulted on synchronization strategies, codebase/domain knowledge, and new feature developments that handled high-volume data ingestion from external dealership software without downtime"
         }
       ],
       tags: ["AWS", "TypeScript", "Node.js", "PostgreSQL", "Datadog", "LaunchDarkly", "GrowthBook", "SumoLogic"]

@@ -25,20 +25,94 @@
     <section class="section">
       <div class="container hero-grid">
         <div class="hero-text">
-          <p class="label-sm">System Architect & Engineer</p>
+          <p class="label-sm">Software Engineer</p>
           <h1 class="display-lg">The Architectural Core.</h1>
           <p class="body-lg" style="margin-bottom: var(--spacing-8); max-width: 600px;">
-            Building digital infrastructure where code meets precision. I treat cloud environments as physical layers, ensuring every node and connection is optimized for high-performance longevity.
+            Backend Engineer with 4 years of experience building, stabilizing, and maintaining high-volume systems. I specialize in modernizing legacy codebases, resolving critical production incidents, and ensuring high-performance longevity through robust cloud infrastructure.
           </p>
-          <a href="#work" class="btn-primary bg-gradient">Explore Infrastructure</a>
+          <a href="#work" class="btn-primary bg-gradient">Explore Experience</a>
         </div>
         <div class="hero-image">
-          <img src="/assets/hero.png" alt="Architectural Blueprint" style="width: 100%; border-radius: 1rem; box-shadow: 0 0 40px rgba(0, 220, 229, 0.1);">
+          <img src="/assets/jaineel.png" alt="Architectural Blueprint" style="width: 100%; border-radius: 1rem; box-shadow: 0 0 40px rgba(0, 220, 229, 0.1);">
         </div>
       </div>
     </section>
 
-    <!-- Work/Projects Section -->
+        <!-- Work Section -->
+    <section id="work" class="section layer-low">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--spacing-12);">
+          <div>
+            <p class="label-sm">Experience</p>
+            <h2>Professional Experience</h2>
+          </div>
+          <p class="body-sm" style="max-width: 300px; color: var(--on-surface-variant);">
+            Last involved in a high-pace fintech environment.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <div class="card">
+            <p class="label-sm" style="color: var(--primary);">Upstart</p>
+            <h3>Software Engineer</h3>
+            <div class="hover-items">
+              <div class="hover-trigger" data-detail="Production Reliability Engineering" data-sub="Resolved critical p0 incidents and stabilized legacy services under high-volume traffic conditions.">
+                <span class="dot"></span> Production Reliability Engineering
+              </div>
+              <div class="hover-trigger" data-detail="API Modernization & Architecture" data-sub="Refactored legacy monoliths into scalable micro-services using modern Node.js and TypeScript patterns.">
+                <span class="dot"></span> API Modernization & Architecture
+              </div>
+              <div class="hover-trigger" data-detail="Performance Optimization" data-sub="Reduced API latency by 40% through intelligent caching layers and database query optimization.">
+                <span class="dot"></span> Performance Optimization
+              </div>
+              <div class="hover-trigger" data-detail="Third-Party Integrations" data-sub="Seamlessly integrated complex fintech providers for loan processing and identity verification.">
+                <span class="dot"></span> Third-Party Integrations
+              </div>
+            </div>
+
+            <!-- Detail Modal (Hidden by default) -->
+            <div id="hover-modal" class="modal glass">
+              <div class="modal-content">
+                <p class="label-sm" id="modal-label">Upstart | Detail</p>
+                <h3 id="modal-title"></h3>
+                <p id="modal-sub"></p>
+              </div>
+            </div>
+            <div class="tags">
+              <span class="chip">AWS</span>
+              <span class="chip">TypeScript</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">DataDog</span>  
+            </div>
+          </div>
+          
+          <div class="card">
+            <p class="label-sm" style="color: var(--primary);">Backend</p>
+            <h3>Paper Trading Engine v2</h3>
+            <p style="margin: 1rem 0;">Robust backend for high-frequency trading simulations, focusing on low-latency and cost-efficiency.</p>
+            <div class="tags">
+              <span class="chip">Fastify</span>
+              <span class="chip">PostgreSQL</span>
+              <span class="chip">OOP</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <p class="label-sm" style="color: var(--primary);">Architecture</p>
+            <h3>Unified Auth Layer</h3>
+            <p style="margin: 1rem 0;">A secure, unified authentication system integrating Google OAuth and Passport Discord.</p>
+            <div class="tags">
+              <span class="chip">Passport.js</span>
+              <span class="chip">OAuth2</span>
+              <span class="chip">Next.js</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="work" class="section layer-low">
       <div class="container">
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--spacing-12);">
@@ -142,6 +216,7 @@
     </div>
   </footer>
 
+  <div id="modal-overlay" class="modal-overlay"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

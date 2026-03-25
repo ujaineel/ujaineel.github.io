@@ -120,20 +120,98 @@ h1, h2, h3, .display-lg {
   -webkit-backdrop-filter: blur(12px);
 }
 
-/* Navigation */
-header {
-  position: sticky;
-  top: 1rem;
-  width: calc(100% - 4rem);
-  margin: 0 2rem;
-  padding: 1rem 2rem;
+/* Hover Items & Modal */
+.hover-items {
+  margin: 1.5rem 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 1000;
-  border-bottom: 1px solid var(--outline-variant);
-  border-radius: 1rem;
+  flex-direction: column;
+  gap: 0.75rem;
 }
+
+.hover-trigger {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--on-surface);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.2s ease;
+  position: relative;
+  padding: 0.25rem 0;
+  width: fit-content;
+}
+
+.hover-trigger:hover {
+  color: var(--primary);
+  transform: translateX(4px);
+}
+
+.hover-trigger .dot {
+  width: 6px;
+  height: 6px;
+  background-color: var(--tertiary);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--tertiary);
+  transition: transform 0.2s ease;
+}
+
+.hover-trigger:hover .dot {
+  transform: scale(1.5);
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  width: 90%;
+  max-width: 450px;
+  padding: var(--spacing-8);
+  border-radius: 1.5rem;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid var(--outline-variant);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-content h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+  color: var(--primary);
+  letter-spacing: -0.01em;
+}
+
+.modal-content p#modal-sub {
+  font-size: 1rem;
+  color: var(--on-surface);
+  line-height: 1.6;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 1999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
 
 .logo {
   font-family: var(--font-display);
@@ -217,6 +295,11 @@ nav a:hover {
   display: flex;
   gap: 0.5rem;
   margin-top: 1.5rem;
+  overflow-x: auto
+}
+
+.project-grid .tags {
+  margin-top: 0;
 }
 
 .chip {
